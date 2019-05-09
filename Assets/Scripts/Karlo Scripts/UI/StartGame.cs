@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LoadingCircle : MonoBehaviour
+public class StartGame : MonoBehaviour
 {
     void Awake()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(4);
+        DBManager.inGame = false;
     }
 
 }
